@@ -1,0 +1,8 @@
+// before-value (context: top-level)
+{
+  // before-key (context: object spot 0)
+  "k0": // before-value (context: object spot 0)
+  "v0"
+  // before-key (context: object spot 1)
+}
+// after-value (context: top-level)

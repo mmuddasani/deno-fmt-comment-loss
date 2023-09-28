@@ -1,0 +1,12 @@
+{
+  "lock": false,
+  "tasks": {
+    "test": "deno cache test.ts && deno task clean && deno task setup && deno task fmt && deno test --allow-read test.ts",
+    "clean": "rm -r ./generated/ 2>/dev/null || ! test -e ./generated/",
+    "setup": "cp -r ./testdata/ ./generated/",
+    "fmt": "deno fmt ./generated/"
+  },
+  "exclude": [
+    "testdata/"
+  ]
+}
